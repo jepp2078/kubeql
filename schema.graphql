@@ -1,0 +1,16 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+schema {
+    query: Query
+}
+
+type Pod {
+  name: String!
+}
+
+type Query {
+  pods: [Pod!]!
+  pod(name: String!): Pod
+}
